@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/coracao.icon.webp" type="image/x-icon">
+    <title>SITE</title>
+<style>
+    
+    *{
+        margin: 0;
+    }
+    section{
+        
+        width: 1200px;
+    }
+
+    @media(max-width: 1200px){
+        section{
+            width: 1000px;
+            
+        }
+    }
+
+    @media(max-width: 1024px){
+        section{
+            width: 700px;
+            
+        }
+    }
+
+    @media(max-width: 768px){
+        section{
+            width: 400px;
+            
+        }
+    }
+    
+    @media(max-width: 425px){
+        section{
+            width: 320px;
+            background-color: grey;
+        }
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+}
+
+a {
+        font-size: 20px;
+        font-family: Andale Mono, monospace	;
+        height: 50px;
+        width: 100px;
+        background: white;
+        color: pink;
+        font-weight: 600;
+}
+
+.box{
+        font-size: 80px;
+        font-family: Andale Mono, monospace	;
+        color: pink;
+        height: 500px;
+        width: 500px;
+        border-radius: 90px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.buttons-container{
+        text-transform:uppercase;
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        width: 150px;
+}
+button {
+        font-size: 20px;
+        font-family: Andale Mono, monospace	;
+        height: 50px;
+        width: 100px;
+        background: white;
+        color: pink;
+        font-weight: 600;
+     
+}
+
+.gif{
+        width: 1500px;
+        height: 398px;
+        vertical-align: top;
+        padding-top: 10px;
+        position: absolute;
+}
+
+    
+</style>
+</head>
+<body>
+
+    <div class="gif">
+        <img src="imagem/gif.gif" alt="gif">
+    </div>
+
+<div class="box">
+    <p>ACEITA FAZER UMA NOITE DE SKIN CARE E CINEMINHA COMIGO?</p>
+    <div class="buttons-container">
+        <button > 
+            <a href="https://www.tiktok.com/@sueth_calvo1/video/7255468633080483077?_d=secCgYIASAHKAESPgo85DTwvaH49nzEYlm7s0ftiLNz3R7uxi5B4YRHT36843xdPY2j03hTx6yNKyW%2BS9vgfXuKaHG7iLTUhzeuGgA%3D&_r=1&aweme_type=150&checksum=d168fb3d3286299c747a25d0e032569c8c883dfe3605c742435e6915b411a2a5&pic_cnt=3&preview_pb=0&sec_user_id=MS4wLjABAAAA9qOdkplcPZOA0XzFvg2Ubc3-9IyS5RAhBfbj4brYrpJLl3IYAgamg1HWyAGJkz8R&share_app_id=1233&share_item_id=7255468633080483077&share_link_id=68f6c2f5-5f12-459b-81e2-946849a4d3af&sharer_language=pt&social_share_type=0&source=h5_m&timestamp=1692569595&u_code=db76c5e1872d03&ug_btm=b2001&ugbiz_name=Unknown&user_id=6800473854554915846&utm_campaign=client_share&utm_medium=android&utm_source=copy">SIM</a>
+        </button>
+            <button id="no">NÃO</button>
+    </div>
+
+
+</div>
+ 
+ 
+ 
+ <script>
+        let button = document.getElementById('no');
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+
+        button.addEventListener('mouseover', function () {
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px";
+
+        })
+ </script>    
+</body>
+</html>
